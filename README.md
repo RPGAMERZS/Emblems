@@ -3,6 +3,7 @@ Emblem Plugin — Customizable Cosmetics for Your Server
 Add a cosmetic emblem system to your server inspired by MinemenClub! Let your players customize and display unique emblems to stand out in-game.
 
 Features:
+<br>
 • Easy-to-use emblem GUI for players to browse and equip emblems
 • Fully customizable — control the prefix, messages, and GUI design through config
 • Economy integration — tie emblems to your server's economy system via Vault
