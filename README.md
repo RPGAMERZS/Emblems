@@ -5,11 +5,17 @@ Add a cosmetic emblem system to your server inspired by MinemenClub! Let your pl
 Features:
 <br>
 • Easy-to-use emblem GUI for players to browse and equip emblems
+<br>
 • Fully customizable — control the prefix, messages, and GUI design through config
+<br>
 • Economy integration — tie emblems to your server's economy system via Vault
+<br>
 • PxCOSMETICS support — works with Phoenix Cosmetics by Refine Development
+<br>
 • PlaceholderAPI support — display emblem info in other plugins
+<br>
 • Admin tools — give/take emblems, manage player cosmetics
+<br>
 
 Dependencies:
 Vault (required) Phoenix (optional) — Economy for emblem purchases
