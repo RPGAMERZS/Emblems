@@ -37,14 +37,22 @@ Commands:
 Aliases: /em, /emblems
 
 Permissions:
-emblem.use — Use commands & GUI (default: all)
-emblem.admin — Admin commands (default: op)
-emblem.all — Access all emblems without buying (default: op)
+<br>
+• emblem.use — Use commands & GUI (default: all)
+<br>
+• emblem.admin — Admin commands (default: op)
+<br>
+•emblem.all — Access all emblems without buying (default: op)
+<br>
 
 PlaceholderAPI Placeholders:
-%emblems_display% — Active emblem symbol
-%emblems_id% — Active emblem ID
-%emblems_name% — Active emblem name
+<br>
+• %emblems_display% — Active emblem symbol
+<br>
+• %emblems_id% — Active emblem ID
+<br>
+• %emblems_name% — Active emblem name
+<br>
 
 Installation:
 Drop the JAR in plugins/, restart server, configure config.yml.
