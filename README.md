@@ -1,7 +1,3 @@
-Emblem v1.0.3
-Emblem is plugin which displays the unique symbols to the players nametag or tablist and more!
-Overview Dependencies Updates (2) Reviews (1) History Analytics Edits
-
 Emblem Plugin — Customizable Cosmetics for Your Server
 
 Add a cosmetic emblem system to your server inspired by MinemenClub! Let your players customize and display unique emblems to stand out in-game.
