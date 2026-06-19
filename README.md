@@ -57,4 +57,11 @@ PlaceholderAPI Placeholders:
 Installation:
 Drop the JAR in plugins/, restart server, configure config.yml.
 
+Platforms:
+<br>
+• (BuildByBit)[https://builtbybit.com/resources/emblem.110748/] Click me
+<br>
+• (SpigotMc)[https://www.spigotmc.org/resources/emblems.136308/] Click me
+<br>
+
 Need help? DM rp_gamerzs on Discord!
