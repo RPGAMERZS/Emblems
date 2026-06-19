@@ -42,7 +42,7 @@ Permissions:
 <br>
 • emblem.admin — Admin commands (default: op)
 <br>
-•emblem.all — Access all emblems without buying (default: op)
+• emblem.all — Access all emblems without buying (default: op)
 <br>
 
 PlaceholderAPI Placeholders:
