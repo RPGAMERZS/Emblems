@@ -1,0 +1,15 @@
+com\emblems\GuiManager$GuiSession.class
+com\emblems\MessageManager.class
+com\emblems\PlayerData.class
+com\emblems\EconomyProvider.class
+com\emblems\GuiManager.class
+com\emblems\PurchaseManager.class
+com\emblems\ConfigManager.class
+com\emblems\NoneEconomyProvider.class
+com\emblems\EmblemExpansion.class
+com\emblems\EmblemsPlugin.class
+com\emblems\EmblemCommand.class
+com\emblems\DataManager.class
+com\emblems\Emblem.class
+com\emblems\VaultEconomyProvider.class
+com\emblems\PxCosmeticsEconomyProvider.class

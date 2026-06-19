@@ -1,0 +1,22 @@
+name: Emblems
+version: 1.0.0
+main: com.emblems.EmblemsPlugin
+author: rp_gamerzs
+softdepend: [PlaceholderAPI, Vault, Phoenix, PhoenixAPI, PXCosmetics, pxCosmetics]
+
+commands:
+  emblem:
+    description: Main emblem command
+    usage: /<command> [gui|list|set|reset|admin|reload]
+    aliases: [em, emblems]
+
+permissions:
+  emblem.use:
+    description: Allows players to use emblem commands and GUI
+    default: true
+  emblem.admin:
+    description: Allows admin emblem commands and GUI bypass
+    default: op
+  emblem.all:
+    description: Grants access to all emblems without purchasing
+    default: op

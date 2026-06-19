@@ -1,0 +1,60 @@
+# ============================================================
+# GUI Configuration — Fully Customizable
+# ============================================================
+# Edit anything below to change the look, feel, and layout.
+# Color codes (&0-&f, &l, &o, etc.) are supported in names & lore.
+# Reload with /emblem reload after editing.
+# ============================================================
+
+gui:
+
+  # Inventory title and size
+  title: "&8Emblem Selector"
+  rows: 6
+
+  # Border items (top row, bottom row, left column, right column)
+  border:
+    material: "STAINED_GLASS_PANE"
+    durability: 15
+    name: "&0"
+
+  # Player info item (skull showing player stats)
+  player-info:
+    enabled: true
+    slot: 4
+    material: "SKULL_ITEM"
+    durability: 3
+    name: "&b%player_name%"
+    lore:
+      - "&7Active: &b%active%"
+      - "&7Unlocked: &b%unlocked_count%&7/&b%total%"
+      - "&7Balance: &b%balance% Gems"
+
+  # Navigation buttons
+  navigation:
+    previous:
+      slot: 48
+      material: "STAINED_GLASS_PANE"
+      durability: 3
+      name: "&b◀ Previous"
+    next:
+      slot: 50
+      material: "STAINED_GLASS_PANE"
+      durability: 3
+      name: "&bNext ▶"
+
+  # Close button
+  close:
+    slot: 49
+    material: "BARRIER"
+    durability: 0
+    name: "&c✕ Close"
+
+  # ============================================================
+  # Available placeholders for player-info block:
+  #   %player_name%     — Player's name
+  #   %active%          — Active emblem display name
+  #   %unlocked_count%  — Number of purchased emblems
+  #   %total%           — Total emblems in config
+  #   %balance%         — Player's Vault balance
+  # ============================================================

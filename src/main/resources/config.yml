@@ -1,0 +1,248 @@
+# ============================================================
+# Emblems Plugin Configuration
+# ============================================================
+
+# Prefix prepended to all messages via %prefix% placeholder
+prefix: "&8[&bEmblems&8] &r"
+
+# Economy provider:
+#   VAULT      - Uses Vault economy (default)
+#   PXCOSMETICS - Uses PxCOSMETICS coins
+#
+economy:
+  provider: PXCOSMETICS
+  # Set to true to log coin transactions (getBalance, has, withdraw) to console
+  debug-logs: false
+
+# ============================================================
+# Messages - All plugin messages are configurable here.
+# Use %prefix% to include the prefix.
+# Use & for color codes.
+# Available placeholders vary by message:
+#   %player%    - Player name
+#   %target%    - Target player name
+#   %emblem%    - Emblem display name
+#   %id%        - Emblem ID
+#   %price%     - Emblem price
+#   %list%      - Comma-separated list
+#   %active%    - Active emblem name
+#   %page%      - Page number
+#   %balance%   - Player balance
+#   %unlocked_count% - Number of unlocked emblems
+#   %total%     - Total emblems
+#
+# Set any message to "" to disable it.
+# ============================================================
+messages:
+  general:
+    no-permission: "%prefix%&cYou don't have permission to use this command."
+    player-only: "%prefix%&cOnly players can use this command."
+    gui-only: "%prefix%&cOnly players can open the GUI. Use /emblem list instead."
+    gui-not-initialized: "%prefix%&cGUI system is not initialized. Contact an admin."
+    usage: "%prefix%&cUsage: /emblem [gui|list|set <id>|reset|admin|reload]"
+    emblem-not-found: "%prefix%&cEmblem '%id%' not found."
+    error: "&cAn error occurred while executing this command."
+    reload-success: "%prefix%&aEmblems configuration reloaded."
+  set:
+    usage: "%prefix%&cUsage: /emblem set <id>"
+    locked: "%prefix%&cYou don't have this emblem unlocked."
+    success: "%prefix%&aEmblem set to %emblem%"
+    removed: "%prefix%&7Your emblem has been removed."
+  reset:
+    success: "%prefix%&7Your emblem has been removed."
+  list:
+    header: "&6=== Your Emblems ==="
+    active: "&7Active: %active%"
+    active-none: "&7Active: None"
+    available: "&7Available: %list%"
+    none: "None"
+  admin:
+    usage: "%prefix%&cUsage: /emblem admin <set|reset|give|take> <player> [id]"
+    player-not-found: "%prefix%&cPlayer not found or not online."
+    set-usage: "%prefix%&cUsage: /emblem admin set <player> <id>"
+    set-removed: "%prefix%&aRemoved %target%'s emblem."
+    set-success: "%prefix%&aSet %target%'s emblem to %emblem%"
+    give-usage: "%prefix%&cUsage: /emblem admin give <player> <id>"
+    give-success: "%prefix%&aGranted emblem '%id%' to %target%"
+    take-usage: "%prefix%&cUsage: /emblem admin take <player> <id>"
+    take-success: "%prefix%&aRevoked emblem '%id%' from %target%"
+    granted: "%prefix%&aAdmin: Granted %emblem%"
+    removed: "%prefix%&aAdmin: Removed %emblem%"
+  purchase:
+    already-owned: "%prefix%&cYou already own this emblem!"
+    has-permission: "%prefix%&cYou already have access to this emblem via permission!"
+    obtained: "%prefix%&aYou obtained %emblem% &aemblem!"
+    success: "%prefix%&aYou have successfully purchased the %emblem% &aemblem!"
+    coins-deducted: "%prefix%&7%amount% coins have been deducted from your account."
+    not-enough-money: "%prefix%&cYou don't have enough gems to buy this emblem!"
+    locked: "%prefix%&cThis emblem is locked and cannot be purchased."
+  equip:
+    success: "%prefix%&aYou equipped %emblem%"
+    unequipped: "%prefix%&7You have unequipped your emblem."
+  gui:
+    previous: "&b◀ Previous"
+    next: "&bNext ▶"
+    close: "&c✕ Close"
+    equipped-lore: "&aCurrently equipped"
+    unequip-lore: "&7Click to unequip"
+    equip-lore: "&aClick to equip"
+  join:
+    emblem-removed: "%prefix%&cYou no longer have access to your previous emblem. It has been removed."
+
+# Each emblem:
+#   symbol:  Unicode symbol
+#   name:    Display name in the GUI
+#   cost:    Gem cost to unlock
+#   material: Minecraft item for the GUI icon
+#   Lore:    Lore lines
+emblems:
+  heart:
+    symbol: '&c❤'
+    name: "&cHeart"
+    cost: 6000
+    material: "RED_ROSE"
+    Lore:
+      - "&7Symbol: %emblem_tag%"
+      - "&7Cost: &b6,000 Gems"
+      - ""
+      - "&eClick to purchase!"
+  snowflake:
+    symbol: '&b❆'
+    name: "&bSnowflake"
+    cost: 6000
+    material: "SNOW_BALL"
+    Lore:
+      - "&7Symbol: %emblem_tag%"
+      - "&7Cost: &b6,000 Gems"
+      - ""
+      - "&eClick to purchase!"
+  music:
+    symbol: '&d♪'
+    name: "&dMusic"
+    cost: 6000
+    material: "JUKEBOX"
+    Lore:
+      - "&7Symbol: %emblem_tag%"
+      - "&7Cost: &b6,000 Gems"
+      - ""
+      - "&eClick to purchase!"
+  dollar:
+    symbol: "&a$"
+    name: "&aDollar"
+    cost: 6000
+    material: "EMERALD"
+    Lore:
+      - "&7Symbol: %emblem_tag%"
+      - "&7Cost: &b6,000 Gems"
+      - ""
+      - "&eClick to purchase!"
+  check:
+    symbol: '&a✔'
+    name: "&aCheck"
+    cost: 6000
+    material: "GREEN_RECORD"
+    Lore:
+      - "&7Symbol: %emblem_tag%"
+      - "&7Cost: &b6,000 Gems"
+      - ""
+      - "&eClick to purchase!"
+  smile:
+    symbol: '&eツ'
+    name: "&eSmile"
+    cost: 6000
+    material: "YELLOW_FLOWER"
+    Lore:
+      - "&7Symbol: %emblem_tag%"
+      - "&7Cost: &b6,000 Gems"
+      - ""
+      - "&eClick to purchase!"
+  sword:
+    symbol: '&f⚔'
+    name: "&fSword"
+    cost: 6000
+    material: "IRON_SWORD"
+    Lore:
+      - "&7Symbol: %emblem_tag%"
+      - "&7Cost: &b6,000 Gems"
+      - ""
+      - "&eClick to purchase!"
+  star:
+    symbol: '&6✯'
+    name: "&6Star"
+    cost: 6000
+    material: "NETHER_STAR"
+    Lore:
+      - "&7Symbol: %emblem_tag%"
+      - "&7Cost: &b6,000 Gems"
+      - ""
+      - "&eClick to purchase!"
+  crossier:
+    symbol: '&6✞'
+    name: "&6Crossier"
+    cost: 6000
+    material: "BLAZE_ROD"
+    Lore:
+      - "&7Symbol: %emblem_tag%"
+      - "&7Cost: &b6,000 Gems"
+      - ""
+      - "&eClick to purchase!"
+  florette:
+    symbol: '&d❃'
+    name: "&dFlorette"
+    cost: 6000
+    material: "DOUBLE_PLANT"
+    Lore:
+      - "&7Symbol: %emblem_tag%"
+      - "&7Cost: &b6,000 Gems"
+      - ""
+      - "&eClick to purchase!"
+  yinyang:
+    symbol: '&8☯'
+    name: "&8Yinyang"
+    cost: 6000
+    material: "INK_SACK"
+    Lore:
+      - "&7Symbol: %emblem_tag%"
+      - "&7Cost: &b6,000 Gems"
+      - ""
+      - "&eClick to purchase!"
+  toxic:
+    symbol: '&a☣'
+    name: "&aToxic"
+    cost: 6000
+    material: "SULPHUR"
+    Lore:
+      - "&7Symbol: %emblem_tag%"
+      - "&7Cost: &b6,000 Gems"
+      - ""
+      - "&eClick to purchase!"
+  lightning:
+    symbol: '&e⚡'
+    name: "&eLightning"
+    cost: 6000
+    material: "BLAZE_POWDER"
+    Lore:
+      - "&7Symbol: %emblem_tag%"
+      - "&7Cost: &b6,000 Gems"
+      - ""
+      - "&eClick to purchase!"
+  fire:
+    symbol: '&c♨'
+    name: "&cFire"
+    cost: 6000
+    material: "FIREBALL"
+    Lore:
+      - "&7Symbol: %emblem_tag%"
+      - "&7Cost: &b6,000 Gems"
+      - ""
+      - "&eClick to purchase!"
+  king:
+    symbol: '&6♛'
+    name: "&6King"
+    cost: 6000
+    material: "GOLDEN_HELMET"
+    Lore:
+      - "&7Symbol: %emblem_tag%"
+      - "&7Cost: &b6,000 Gems"
+      - ""
+      - "&eClick to purchase!"
