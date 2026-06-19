@@ -18,8 +18,11 @@ Features:
 <br>
 
 Dependencies:
-Vault (required) Phoenix (optional) — Economy for emblem purchases
-PlaceholderAPI (optional) — Placeholders
+<br>
+• Vault (required) Phoenix (optional) — Economy for emblem purchases
+<br>
+• PlaceholderAPI (optional) — Placeholders
+<br>
 
 Commands:
 | Command | Description | Permission |
