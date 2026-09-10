@@ -32,6 +32,19 @@ public class EmblemsPlugin extends JavaPlugin implements Listener {
        this.configManager.load();
        this.messageManager = new MessageManager(this);
        this.messageManager.load();
+
+       // Lukittu License Verification (always required)
+       LicenseManager licenseManager = new LicenseManager(this);
+       this.getLogger().info("[License] Verifying license...");
+       LicenseManager.LicenseResult result = licenseManager.verify();
+       if (!result.isValid()) {
+          this.getLogger().severe("[License] " + result.getMessage());
+          this.getLogger().severe("[License] Plugin disabled. Purchase a valid license.");
+          this.getServer().getPluginManager().disablePlugin(this);
+          return;
+       }
+       this.getLogger().info("[License] " + result.getMessage());
+
        if (!this.setupEconomy()) {
           this.getServer().getPluginManager().disablePlugin(this);
           return;
