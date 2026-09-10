@@ -23,7 +23,7 @@ public class LicenseManager {
     public LicenseResult verify() {
         String key = getKeyFromLicenseFile();
         if (key == null || key.trim().isEmpty()) {
-            return new LicenseResult(false, "No license key configured! Create license.yml and add your key. Get one at " + SERVER_URL + " | Discord: https://discord.gg/vNWpjVeGf5");
+            return new LicenseResult(false, "No license key configured! Create license.yml and add your key. Get one at https://discord.gg/vNWpjVeGf5");
         }
 
         try {
